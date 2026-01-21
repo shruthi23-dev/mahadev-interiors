@@ -9,6 +9,6 @@ export default `<!doctype html>
 <style>*{margin:0;padding:0;box-sizing:border-box}body{padding-top:85px}</style><link rel="stylesheet" href="styles-A6V4LWQS.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-A6V4LWQS.css"></noscript></head>
 <body ngcm="">
   <app-root></app-root>
-<link rel="modulepreload" href="chunk-SGHRYV5O.js"><script src="main-RPJKTZQT.js" type="module"></script></body>
+<link rel="modulepreload" href="chunk-6SWNYEXP.js"><script src="main-5FBY2U5H.js" type="module"></script></body>
 </html>
 `;
