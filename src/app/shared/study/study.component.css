@@ -1,0 +1,72 @@
+.study-section {
+  padding: 40px 6%;
+  background: #FFFFFF;
+}
+
+.main-title {
+  color: #1f2933;
+  text-align: center;
+}
+.main-title h2{
+  font-size: 30px;
+  margin-bottom: 1px;
+
+}
+.stagline{
+font-size: 18px;
+color: #6B7280;
+max-width: 600px;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 30px;
+
+}
+
+/* GRID */
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+/* CARD */
+.study-card {
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+
+.study-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 992px) {
+  .study-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .study-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .section-tagline {
+    font-size: 14px;
+  }
+  .study-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+}

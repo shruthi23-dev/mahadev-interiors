@@ -1,0 +1,11 @@
+{
+  "routes": {
+    "/mahadev-interiors": {},
+    "/mahadev-interiors/bedroom": {},
+    "/mahadev-interiors/home": {},
+    "/mahadev-interiors/ourworks": {},
+    "/mahadev-interiors/pagedinning": {},
+    "/mahadev-interiors/pagekitchen": {},
+    "/mahadev-interiors/pagelivingroom": {}
+  }
+}

@@ -1,0 +1,19 @@
+
+
+<div class="gallery" [class.blur]="showBlur" >
+   <img
+    *ngFor="let img of images; let i = index"
+    [src]="img"
+    [style.animationDelay]="i * 0.3 + 's'"
+    alt="book image"
+  />
+</div>
+
+
+<div class="logo-overlay" [class.show]="showLogo">
+  <div class="logo-text">    
+    welcome  <br />
+    <span>Mahadev interiors </span>
+  </div>
+</div>
+

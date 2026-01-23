@@ -1,0 +1,102 @@
+<section class="cupboards-section">
+
+  <h2 class="main-title">BEDROOM</h2>
+ <p class="tagline"> Serenity and Style, Sleep Surrounded by Elegance.</p>
+
+
+  <!-- BEDROOM -->
+  <div class="cupboard-block">
+    <div class="block-header">
+      <h3 class="sub-title">
+        <span class="title-wrap">
+          <span class="line"></span>
+          <span class="text">Wardrobes</span>
+        </span>
+      </h3>
+      <div class="nav-arrows">
+        <button class="arrow" (click)="bedroomPrev()">&#10094;</button>
+        <button class="arrow" (click)="bedroomNext()">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="slider-window">
+      <div
+        class="slider-track"
+        [style.transform]="bedroomTransform()">
+        <div class="slide" *ngFor="let img of bedroomOriginal">
+          <img [src]="img" alt="Bedroom cupboard">
+        </div>
+      </div>
+    </div>
+    <div class="view-more-wrap">
+       <button class="view-more-btn" routerLink="/bedroom" [queryParams]="{section:'wardrobes'}">
+      View More
+      </button>
+     </div>
+  </div>
+
+  <!-- KITCHEN -->
+ <div class="cupboard-block">
+    <div class="block-header">
+      <h3 class="sub-title">
+        <span class="title-wrap">
+            <span class="line"></span>
+            <span class="text">Beds</span>
+           </span>
+      </h3>
+
+      <div class="nav-arrows">
+           <button class="arrow" (click)="bedPrev()">&#10094;</button>
+           <button class="arrow" (click)="bedNext()">&#10095;</button>
+       </div>
+    </div>
+
+    <div class="slider-window">
+       <div
+          class="slider-track"
+          [style.transform]="bedTransform()">
+         <div class="slide" *ngFor="let img of bedOriginal">
+          <img [src]="img" alt="beds">
+       </div>
+     </div>
+    </div>
+        <div class="view-more-wrap">
+       <button class="view-more-btn" routerLink="/bedroom" [queryParams]="{section:'beds'}">
+      View More
+      </button>
+     </div>
+
+  </div>
+
+  <div class="cupboard-block">
+    <div class="block-header">
+      <h3 class="sub-title">
+        <span class="title-wrap">
+          <span class="line"></span>
+          <span class="text">Dressing Tables</span>
+        </span>
+      </h3>
+      <div class="nav-arrows">
+        <button class="arrow" (click)="dressPrev()">&#10094;</button>
+        <button class="arrow" (click)="dressNext()">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="slider-window">
+      <div
+        class="slider-track"
+        [style.transform]="dressTransform()">
+        <div class="slide" *ngFor="let img of dressOriginal">
+          <img [src]="img" alt="Dressing Table">
+        </div>
+      </div>
+    </div>
+
+    <div class="view-more-wrap">
+       <button class="view-more-btn" routerLink="/bedroom" [queryParams]="{section:'dressing'}">
+      View More
+      </button>
+     </div>
+  </div>
+
+</section>

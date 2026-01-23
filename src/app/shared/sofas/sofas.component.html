@@ -1,0 +1,30 @@
+<section class="sofas-section">
+
+  <div class="s-section-header">
+    <h2>SOFAS</h2>
+  </div>
+<hr class="silder-divider-s">
+  <div class="s-slider-wrapper">
+    <div
+      class="s-slider-track"
+      [style.width]="sofas.length * 50"
+      [style.transform]="'translateX(-' + (currentIndex * 50) + '%)'">
+
+      <div
+        class="sofa-card"
+        *ngFor="let sofa of sofas">
+        <img [src]="sofa" alt="Sofa">
+      </div>
+
+  </div>
+       <div class="view-more-wrap">
+       <button class="view-more-btn" routerLink="/pagelivingroom" [queryParams]="{section:'sofas'}">
+      View More
+      </button>
+      </div>
+
+  </div>
+<hr class="silder-divider-e">
+
+</section>
+

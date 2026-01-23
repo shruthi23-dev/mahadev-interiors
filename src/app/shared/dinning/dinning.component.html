@@ -1,0 +1,28 @@
+<section class="dinning-section">
+
+  <div class="section-header">
+    <h2>DINNING TABLES</h2>
+    <p class="dtagline">Thoughtfully designed dining tables for shared moments and meals</p>
+  </div>
+
+  <div class="slider-wrapper">
+    <div
+      class="slider-track"
+      [style.transform]="'translateX(-' + (currentIndex * 50) + '%)'">
+
+      <div
+        class="dinning-card"
+        *ngFor="let dinning of Dinnings">
+        <img [src]="dinning" alt="DinningTables">
+      </div>
+
+    </div>
+        <div class="view-more-wrap">
+       <button class="view-more-btn" routerLink="/pagedinning">
+      View More
+      </button>
+     </div>
+
+  </div>
+
+</section>

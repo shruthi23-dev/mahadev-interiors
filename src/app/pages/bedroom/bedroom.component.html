@@ -1,0 +1,102 @@
+<app-header></app-header>
+
+<section class="bedroom-section">
+
+  <h2 class="main-title">BEDROOM</h2>
+ <p class="tagline"> Serenity and Style, Sleep Surrounded by Elegance.</p>
+
+<section *ngIf="activeSection === 'all' || activeSection === 'wardrobes'" class="block-section">
+
+  <div class="section-header">
+    <h2>Wardrobes</h2>
+    <p class="text">Storage that Inspires, Timeless Design in Every Detail.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="assets/cupboards/wrc1.jpeg">
+    <img src="assets/cupboards/wrc2.jpeg">
+    <img src="assets/cupboards/wrc3.jpeg">
+    <img src="assets/cupboards/wrc4.jpeg">
+    <img src="assets/cupboards/wrc5.jpeg">
+    <img src="assets/cupboards/wrc6.jpeg">
+    <img src="assets/cupboards/wrc7.jpeg">
+    <img src="assets/cupboards/wrc8.jpeg">
+    <img src="assets/cupboards/wrc9.jpeg">
+    <img src="assets/cupboards/wrc10.jpeg">
+    <img src="assets/cupboards/wrc11.jpeg">
+    <img src="assets/cupboards/wrc12.jpeg">
+    <img src="assets/cupboards/wrc13.jpeg">
+    <img src="assets/cupboards/wrc14.jpeg">
+    <img src="assets/cupboards/wrc15.jpeg">
+    <img src="assets/cupboards/BDR1.jpg">
+    <img src="assets/cupboards/BDR2.jpg">
+    <img src="assets/cupboards/BDR3.webp">
+    <img src="assets/cupboards/BDR4.webp">
+    <img src="assets/cupboards/BDR5.webp">
+    <img src="assets/cupboards/BDR6.webp">
+    <img src="assets/cupboards/BDR7.webp">
+    <img src="assets/cupboards/BDR8.webp">
+    <img src="assets/cupboards/BDR9.webp">
+    <img src="assets/cupboards/BDR10.webp">
+    <img src="assets/cupboards/BDR11.webp">
+    <img src="assets/cupboards/BDR12.webp">
+  </div>
+
+</section>
+<section *ngIf="activeSection === 'all' || activeSection === 'beds'" class="block-section">
+
+  <div class="section-header">
+    <h2>Beds</h2>
+    <p class="text">Sleep Wrapped in Craftsmanship, Dreams Start Here.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="assets/wr/wrb1.jpeg">
+    <img src="assets/wr/wrb2.jpeg">
+    <img src="assets/wr/wrb3.jpeg">
+    <img src="assets/wr/wrb4.jpeg">
+    <img src="assets/cupboards/bed1.webp">
+    <img src="assets/cupboards/bed2.webp">
+    <img src="assets/cupboards/bed3.webp">
+    <img src="assets/cupboards/bed4.jpg">
+    <img src="assets/cupboards/bed5.webp">
+    <img src="assets/cupboards/bed6.webp">
+    <img src="assets/cupboards/bed7.webp">
+    <img src="assets/cupboards/bed8.webp">
+    <img src="assets/cupboards/bed9.webp">
+
+  </div>
+
+</section>
+<section *ngIf="activeSection === 'all' || activeSection === 'dressing'" class="block-section">
+
+  <div class="section-header">
+    <h2>Dressing Tables</h2>
+    <p class="text">Where Beauty Meets Utility, Designed for You.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="assets/wr/wrdt1.jpeg">
+    <img src="assets/wr/wrdt2.jpeg">
+    <img src="assets/wr/wrdt5.jpeg">
+    <img src="assets/cupboards/drt1.webp">
+    <img src="assets/cupboards/drt2.webp">
+    <img src="assets/cupboards/drt4.webp">
+    <img src="assets/cupboards/drt5.webp">
+    <img src="assets/cupboards/drt6.webp">
+    <img src="assets/cupboards/drt7.webp">
+    <img src="assets/cupboards/drt8.webp">
+    <img src="assets/cupboards/drt9.webp">
+
+  </div>
+
+</section>
+<div class="back-wrap" *ngIf="activeSection !== 'all'">
+  <button class="back-btn" (click)="showAll()">
+    ← View All Bedroom Furniture
+  </button>
+</div>
+</section>
+<app-contact></app-contact>
+<app-footer></app-footer>
+

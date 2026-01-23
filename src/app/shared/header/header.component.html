@@ -1,0 +1,58 @@
+<header class="site-header">
+  <div class="header-main" [class.is-sticky]="isSticky">
+  <div class="title">INTERIORS AND WOOD WORKS</div>
+    <div class="container">
+    <span class="menu-toggle" (click)="toggleMenu()">☰</span>
+
+      <div class="logo-wrapper">
+        <img src="assets/logo.png" alt="Mahadev Interiors">
+      </div>
+
+      <nav class="main-navigation" [class.open]="isMenuOpen">
+        <ul class="menu">
+<li>
+  <a
+    routerLink="/home"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    (click)="closeMenu()"
+  > Home
+</a>
+</li>
+
+ <li>
+            <a routerLink="/pagelivingroom"
+               routerLinkActive="active-link"
+               (click)="closeMenu()">Living Room</a>
+          </li>
+
+          <li>
+            <a routerLink="/bedroom"
+               routerLinkActive="active-link"
+               (click)="closeMenu()">Bedroom</a>
+          </li>
+
+          <li>
+            <a routerLink="/pagekitchen"
+               routerLinkActive="active-link"
+               (click)="closeMenu()">Kitchen</a>
+          </li>
+
+          <li>
+            <a routerLink="/pagedinning"
+               routerLinkActive="active-link"
+               (click)="closeMenu()">Dinning Tables</a>
+          </li>
+
+          <li>
+            <a routerLink="/ourworks"
+              routerLinkActive="active-link"
+               (click)="closeMenu()">
+               Our Works</a>
+          </li>        
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+

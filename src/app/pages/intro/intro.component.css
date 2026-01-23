@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #000;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 50vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: filter 0.6s ease;
+  position: relative;
+  z-index: 0;
+
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  animation: zoom 0.2s ease-in-out alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  position: relative;
+  z-index: 9999;
+}
+
+/* Zoom animation */
+@keyframes zoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.1); }
+}
+
+/* Blur effect */
+.gallery.blur {
+  filter: blur(6px);
+}
+
+/* Logo overlay */
+.logo-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+  z-index: 9999 ;
+}
+
+.logo-overlay.show .logo-text {
+    animation: logoFade 0.8s ease forwards;
+}
+
+.logo-text {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+
+.logo-text span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.logo-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 50vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 25vh;
+  }
+
+}

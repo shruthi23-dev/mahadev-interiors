@@ -1,0 +1,25 @@
+<section class="hero-section">
+
+  <div class="slider-window">
+    <div
+      class="slider-track"
+      [style.transform]="'translateX(-' + currentSlide * 100 + '%)'"
+    >
+      <div
+        class="slide"
+        *ngFor="let s of slides"
+        [style.backgroundImage]="'url(' + s + ')'"
+      ></div>
+    </div>
+  </div>
+
+  <!-- dots will NOT move now -->
+  <div class="hero-dots">
+    <span
+      class="dot"
+      *ngFor="let s of slides; let i = index"
+      [class.active]="i === currentSlide">
+    </span>
+  </div>
+
+</section>

@@ -1,0 +1,123 @@
+.cabinet-section {
+  padding: 40px 6%;
+  background-color: #ffffff;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #1f2933;
+  margin-bottom: 3rem;
+}
+.header h2 {
+  position: absolute;
+  left: 6%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 34px;
+}
+.arrows {
+    display: flex;
+    gap: 10px;
+}
+.arrow-p,
+.arrow-n{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.arrow-p:hover,
+.arrow-n:hover {
+  transform: scale(1.1);
+  background-color: #b87333;
+}
+.slider-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease;
+    gap: 15px;
+
+}
+
+.slider-track.no-transition {
+  transition: none;
+}
+
+.slide {
+  flex: 0 0 25%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.slide:hover{
+  border: 3px solid #1f2933;
+overflow: hidden;
+}
+.view-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.view-more-btn {
+  padding: 15px 45px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #1f2933;
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #1f2933;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #b87333;
+  color: #ffffff;
+  transform: scale(0.9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1200px) {
+  .slide { flex: 0 0 33.333%; }
+}
+
+@media (max-width: 992px) {
+  .slide { flex: 0 0 50%; }
+  .header h2{
+    font-size: 1.7rem;
+    left: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide { flex: 0 0 100%; }
+  .slider-track{
+    gap: 0;
+  }
+}
+.cabinet-section,
+.header,
+.slider-track,
+.slide,
+.arrow-p,
+.arrow-n {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

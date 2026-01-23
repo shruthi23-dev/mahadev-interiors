@@ -1,0 +1,37 @@
+<section class="kitchen-section">
+
+  <h2 class="main-title">KITCHEN</h2>
+  <p class="ktagline">Functional kitchen storage crafted for efficiency and modern homes.</p>
+  <!-- KITCHEN -->
+  <div class="kitchen-block">
+    <div class="block-header">
+      <h3 class="sub-title">
+        <span class="title-wrap">
+          <span class="line"></span>
+          <span class="text">Kitchen Cupboards</span>
+        </span>
+      </h3>
+
+      <div class="nav-arrows">
+        <button class="arrow" (click)="kitchenPrev()">&#10094;</button>
+        <button class="arrow" (click)="kitchenNext()">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="slider-window">
+      <div
+        class="slider-track"
+        [style.transform]="kitchenTransform()">
+        <div class="slide" *ngFor="let img of kitchenOriginal">
+          <img [src]="img" alt="Kitchen cupboard">
+        </div>
+      </div>
+    </div>
+    <div class="view-more-wrap">
+  <button class="view-more-btn" routerLink="/pagekitchen">
+    View More
+  </button>
+    </div>
+  </div>
+
+</section>

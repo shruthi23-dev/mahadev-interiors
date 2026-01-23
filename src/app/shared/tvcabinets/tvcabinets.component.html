@@ -1,0 +1,28 @@
+<section class="cabinet-section">
+  <div class="header">
+    <h2>TV Cabinets</h2><div class="arrows">
+    <button class="arrow-p" (click)="prev()">&#10094;</button>
+    <button class="arrow-n" (click)="next()">&#10095;</button>
+  </div>
+  </div>
+  <div class="slider-window">
+    <div
+      class="slider-track"
+      [class.no-transition]="!transition"
+      [style.transform]="getTransform()"
+      (transitionend)="onTransitionEnd()"
+    >
+      <div
+        class="slide"
+        *ngFor="let img of slides"
+        [style.backgroundImage]="'url(' + img + ')'"
+      ></div>
+    </div>
+  </div>
+    <div class="view-more-wrap">
+       <button class="view-more-btn" routerLink="/pagelivingroom" [queryParams]="{section:'tvcabinets'}">
+      View More
+      </button>
+     </div>
+
+</section>

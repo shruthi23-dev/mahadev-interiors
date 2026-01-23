@@ -1,0 +1,52 @@
+.hero-section {
+  width: 100%;
+  height: 89vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-window {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+
+/* Dots */
+.hero-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+}
+
+.dot.active {
+  background: #fff;
+
+}
+
+

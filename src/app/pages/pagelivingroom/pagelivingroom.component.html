@@ -1,0 +1,69 @@
+<app-header></app-header>
+
+<section class="living-section">
+
+  <h2 class="main-title">Living Room</h2>
+ <p class="tagline">Where Comfort Meets Tradition, Every Corner Tells a Story.</p>
+
+<section *ngIf="activeSection === 'all' || activeSection === 'sofas'" class="block-section">
+
+  <div class="section-header">
+    <h2>Sofas</h2>
+    <p class="text">Elegant wardrobes designed to organize beautifully.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="assets/sofas-dnt/sofa1.webp">
+    <img src="assets/sofas-dnt/sofa2.webp">
+    <img src="assets/sofas-dnt/sofa3.webp">
+    <img src="assets/sofas-dnt/sofa4.webp">
+    <img src="assets/sofas-dnt/sofa5.webp">
+    <img src="assets/sofas-dnt/sofa6.webp">
+    <img src="assets/sofas-dnt/sofa7.webp">
+  </div>
+
+</section>
+<section *ngIf="activeSection === 'all' || activeSection === 'tvcabinets'" class="block-section">
+
+  <div class="section-header">
+    <h2>TV Cabinets</h2>
+    <p class="text">Comfortable beds crafted for restful nights.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="assets/tvunits/wrtv17.jpeg">
+    <img src="assets/tvunits/wrtv2.jpeg">
+    <img src="assets/tvunits/wrtv3.jpeg">
+    <img src="assets/tvunits/wrtv4.jpeg">
+    <img src="assets/tvunits/wrtv6.jpeg">
+    <img src="assets/tvunits/wrtv7.jpeg">
+    <img src="assets/tvunits/wrtv8.jpeg">
+    <img src="assets/tvunits/wrtv9.jpeg">
+    <img src="assets/tvunits/wrtv10.jpeg">
+    <img src="assets/tvunits/wrtv11.jpeg">
+    <img src="assets/tvunits/wrtv1.jpeg">
+    <img src="assets/tvunits/wrtv12.jpeg">
+    <img src="assets/tvunits/wrtv13.jpeg">
+    <img src="assets/tvunits/wrtv14.jpeg">
+    <img src="assets/tvunits/wrtv15.jpeg">
+    <img src="assets/tvunits/wrtv16.jpeg">
+    <img src="assets/tvunits/wrtv5.jpeg">
+    <img src="assets/tvunits/wrtv18.jpeg">
+    <img src="assets/tvunits/TVC1.webp">
+    <img src="assets/tvunits/TVC2.webp">
+    <img src="assets/tvunits/TVC3.webp">
+    <img src="assets/tvunits/TVC4.webp">
+    <img src="assets/tvunits/TVC5.webp">
+
+  </div>
+
+</section>
+<div class="back-wrap" *ngIf="activeSection !== 'all'">
+  <button class="back-btn" (click)="showAll()">
+    ← View All LivingRoom Furniture
+  </button>
+</div>
+</section>
+<app-contact></app-contact>
+<app-footer></app-footer>
+
